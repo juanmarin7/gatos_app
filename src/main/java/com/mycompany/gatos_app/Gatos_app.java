@@ -3,13 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.gatos_app;
+import java.io.IOException;
 import javax.swing.JOptionPane;
 /**
  *
  * @author SSSA
  */
-public class Inicio {
-    public static void main(String[] args) {
+public class Gatos_app {
+    public static void main(String[] args) throws IOException {
         int opcionMenu = -1;
         String[] botones = {"1. Ver Gatos","2.Salir"};
         
@@ -26,12 +27,13 @@ public class Inicio {
             
             switch (opcionMenu) {
                 case 0:
+                    System.out.println("Error D:");
                     GatosService.verGatos();
                     break;
                 default:
                     throw new AssertionError();
             }
-        } while (opcionMenu != 1);
+        } while (opcionMenu != -1);
         
     }
 }

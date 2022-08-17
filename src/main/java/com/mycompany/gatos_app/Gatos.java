@@ -9,34 +9,27 @@ package com.mycompany.gatos_app;
  * @author SSSA
  */
 public class Gatos {
-    int id;
-    String URL;
-    String APIKEY="c2c0e25d-3ae2-4c7b-97ab-fa9ad10df548";
+    String id;
+    String url;
     String image;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getURL() {
-        return URL;
+    public String getUrl() {
+        return url;
     }
 
-    public void setURL(String URL) {
-        this.URL = URL;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
-    public String getAPIKEY() {
-        return APIKEY;
-    }
 
-    public void setAPIKEY(String APIKEY) {
-        this.APIKEY = APIKEY;
-    }
 
     public String getImage() {
         return image;
@@ -45,6 +38,8 @@ public class Gatos {
     public void setImage(String image) {
         this.image = image;
     }
+
+    
     
     
 }
